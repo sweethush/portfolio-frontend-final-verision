@@ -1,0 +1,92 @@
+/* 整体导航栏 */
+.navbar {
+  width: 100%;
+  padding: 14px 28px;
+  background-color: #6c2bd9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* 左侧菜单 */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Logo */
+.nav-logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  margin-right: 25px;
+}
+
+/* 基础链接 */
+.nav-item {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+.nav-item:hover {
+  color: #ffdfff;
+}
+
+/* 右侧区域 */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* 登录 / 注册按钮 */
+.auth-btn {
+  padding: 7px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.auth-btn.login {
+  border: 1px solid white;
+  color: white;
+}
+
+.auth-btn.login:hover {
+  background: white;
+  color: #6c2bd9;
+}
+
+.auth-btn.register {
+  border: 1px solid white;
+  background: white;
+  color: #6c2bd9;
+}
+
+.auth-btn.register:hover {
+  background: #f3e8ff;
+}
+
+/* Logout 按钮 */
+.logout-btn {
+  padding: 7px 16px;
+  background: #ef4444;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+}
