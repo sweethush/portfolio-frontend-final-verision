@@ -1,0 +1,78 @@
+/* 页面整体布局 */
+.blog-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+}
+
+/* 标题 */
+.blog-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+/* 当没有博客内容时的提示文字 */
+.no-blogs {
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+/* 博客列表容器：响应式 grid */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+/* 每一篇博客卡片 */
+.blog-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* 卡片标题 */
+.blog-card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+/* 内容预览 */
+.blog-card-preview {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+/* “Read More” 按钮 */
+.blog-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #2563eb; /* 蓝色 */
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.blog-btn:hover {
+  background-color: #1d4ed8;
+}
